@@ -40,4 +40,7 @@ document.querySelector('#quote-form')?.addEventListener('submit', (event) => {
   window.open(url, '_blank', 'noopener');
 });
 
-document.querySelector('#year').textContent = new Date().getFullYear();
+const copyright = document.querySelector('.copyright');
+if (copyright) {
+  copyright.innerHTML = '© 2026 MS Caçambas. Todos os direitos reservados. &nbsp; Desenvolvido por <a href="https://wa.me/5565992274220" target="_blank" rel="noopener" style="color:inherit;font-weight:800;text-decoration:none;"><strong>ROBUSTTI TECNOLOGIA</strong></a>';
+}
